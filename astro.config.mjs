@@ -38,14 +38,6 @@ export default defineConfig({
 		},
 	],
 	devToolbar: { enabled: false },
-  worker: {
-    name: "my-site",
-    compatibilityDate: "2026-07-01",
-    entrypoint: "./src/worker.ts",
-    env: {
-      LOADER: bindings.workerLoader(),
-    },
-  },
 });
 });
 
