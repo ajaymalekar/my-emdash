@@ -12,6 +12,7 @@ export default defineConfig({
 		layout: "constrained",
 		responsiveStyles: true,
 	},
+	
 	integrations: [
 		react(),
 		emdash({
@@ -37,10 +38,6 @@ export default defineConfig({
 		},
 	],
 	devToolbar: { enabled: false },
-});
-import { bindings, defineConfig } from "cf/config";
-
-export default defineConfig({
   worker: {
     name: "my-site",
     compatibilityDate: "2026-07-01",
@@ -50,3 +47,5 @@ export default defineConfig({
     },
   },
 });
+});
+
