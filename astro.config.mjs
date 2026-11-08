@@ -38,3 +38,15 @@ export default defineConfig({
 	],
 	devToolbar: { enabled: false },
 });
+import { bindings, defineConfig } from "cf/config";
+
+export default defineConfig({
+  worker: {
+    name: "my-site",
+    compatibilityDate: "2026-07-01",
+    entrypoint: "./src/worker.ts",
+    env: {
+      LOADER: bindings.workerLoader(),
+    },
+  },
+});
